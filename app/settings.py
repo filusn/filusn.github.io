@@ -12,4 +12,6 @@ PROJECT_ROOT = get_parent_dir(APP_DIR)
 
 FREEZER_DESTINATION = PROJECT_ROOT
 
+FREEZER_BASE_URL = "https://filusn.github.io"
+
 FREEZER_REMOVE_EXTRA_FILES = False
