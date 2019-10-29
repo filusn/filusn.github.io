@@ -1,0 +1,61 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(102, 102, 102);
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 11pt;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 14fr;
+}
+
+header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: #fff;
+    font-size: 3.5em;
+    line-height: 1.35;
+}
+
+/* li {
+    display: inline-block;
+    color: #ddd;
+} */
+
+#header nav > ul {
+    float: right;
+    margin: 0.5em;
+}
+
+#header nav > ul > li {
+    display: inline-block;
+    margin-left: 2.5em;
+}
+
+#header nav > ul > li a {
+    display: inline-block;
+    color: #ddd;
+    text-decoration: none;
+}
+
+/* a {
+    color: #ddd;
+} */
+
+p {
+    /* color: #666;  */
+    /* color: #484848; */
+    /* #aaa; */
+}
