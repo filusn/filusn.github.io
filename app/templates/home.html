@@ -1,9 +1,9 @@
 <!doctype html>
 <!-- <title>{% block title %}{% endblock %} - FifiNow</title> -->
 <title>FifiNow</title>
-<!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 </head>
 <header id="header">
     <nav id="nav">
@@ -12,13 +12,13 @@
                 <a href="/">Home</a>
             </li>
             <li>
-                <a href="/projects.html">Projects</a>
+                <a href="{{ url_for('projects') }}">Projects</a>
             </li>
             <li>
-                <a href="/blog.html">Blog</a>
+                <a href="{{ url_for('blog') }}">Blog</a>
             </li>
             <li>
-                <a href="/cv.pdf">CV</a>
+                <a href="{{ url_for('cv') }}">CV</a>
             </li>
         </ul>
     </nav>
