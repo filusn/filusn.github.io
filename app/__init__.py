@@ -10,14 +10,14 @@ def create_app():
 
     @app.route('/blog/')
     def blog():
-        return render_template('home.html')
+        return render_template('blog.html')
 
     @app.route('/projects/')
     def projects():
-        return 'hello'
+        return render_template('projects.html')
 
     @app.route('/cv/')
     def cv():
-        return render_template('home.html')
+        return render_template('cv.html')
 
     return app
