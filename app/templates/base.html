@@ -1,21 +1,29 @@
 <!doctype html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
+<title>{% block title %}{% endblock %}</title>
+<style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+</style>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<nav>
-  <h1>Filip Noworolnik</h1>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="{{ url_for('projects') }}">Projects</a></li>
-    <li><a href="{{ url_for('blog') }}">Blog</a></li>
-    <li><a href="{{ url_for('cv') }}">CV</a></li>
-  </ul>
-</nav>
-<section class="content">
-  <header>
-    {% block header %}{% endblock %}
-  </header>
-  {% for message in get_flashed_messages() %}
-    <div class="flash">{{ message }}</div>
-  {% endfor %}
-  {% block content %}{% endblock %}
-</section>
+<div class="container">
+    <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        <li><a href="{{ url_for('blog') }}">Blog</a></li>
+        <li><a href="{{ url_for('cv') }}">CV</a></li>
+    </ul>
+    </nav>
+    <div class="subheader">
+        <h1>Filip Noworolnik</h1>
+        <h3>AI, Data and Learning</h3>
+    </div>
+    <section class="content">
+    <header>
+        {% block header %}{% endblock %}
+    </header>
+    {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+    {% endfor %}
+    {% block content %}{% endblock %}
+    </section>
+</div>

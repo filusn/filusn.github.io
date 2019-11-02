@@ -5,4 +5,9 @@
 {% endblock %}
 
 {% block content %}
+    {% for project in projects %}
+        <p>
+            <b>{{ project.title }}</b> says: {{ project.body }}
+        </p>
+    {% endfor %}
 {% endblock %}
