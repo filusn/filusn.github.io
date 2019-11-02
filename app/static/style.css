@@ -2,6 +2,7 @@ html, body {
     width: 100%;
     height: 100%;
     font-weight: 400;
+    font-size: 11pt;
 }
 
 body {
@@ -16,6 +17,18 @@ h1 {
     text-align: center;
     font-size: 2.5em;
     font-weight: 700;
+    margin: auto;
+}
+
+h2 {
+    color: #484848;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    margin-top: 0;
+    /* margin-block-start: 1em; */
+    /* margin-block-end: 1em; */
 }
 
 h3 {
@@ -24,6 +37,7 @@ h3 {
     text-align: center;
     font-weight: inherit;
     font-size: 1.5em;
+    margin: auto;
 }
 
 .container {
@@ -32,11 +46,13 @@ h3 {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 4fr;
+    grid-template-rows: 1fr 2.5fr 4fr;
 }
 
 .subheader {
+    width: 100%;
     background-color: #565656;
+    margin: auto;
 }
 
 nav {
@@ -79,3 +95,36 @@ li a:visited {
     background-color: #ffffff;
 }
 
+.row {
+    max-width: 55em;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#header {
+    width: 100%;
+    margin: 0;
+    /* display: inline-block; */
+    grid-column: 1 / 2;
+}
+
+.section-container {
+    width: 30em;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* display: inline-block; */
+    grid-column: 2 / 3;
+}
+
+/* p {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+} */
+
+p:first-child {
+    margin-top: 0;
+}

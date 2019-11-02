@@ -1,15 +1,28 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}FILIP NOWOROLNIK{% endblock %}</h1>
+  <h2>{% block title %}About me{% endblock %}</h2>
 {% endblock %}
 
 {% block content %}
-  <!-- <form method="post">
-    <label for="username">Username</label>
-    <input name="username" id="username" required>
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password" required>
-    <input type="submit" value="Register">
-  </form> -->
+    <div class='section-container'>
+        <p>
+            I am a data analyst and Python developer who loves data science.
+            I have a wide range of interests, especially in the field of 
+            artificial intelligence. I want to design systems that help
+            people by improving their lifes.
+        </p>
+        <p>
+            I completed my B.S. at AGH University of Science and Technology.
+            My thesis was <span class='title'>Tumour cell detection on 
+            confocal microscopy images</span>. It was my first research
+            exploring use of data science and image processing on the health field.
+        </p>
+        <p>
+            <!-- Meanwhile I started internship at IBM Poland and later work at
+            Aptiv (former Delphi) as data analyst. Now I work at FEV Poland
+            and in my free time I am learning and developing my interests.<br> -->
+            If you want to know more - check out my projects and blog.
+        </p>
+    </div>
 {% endblock %}
