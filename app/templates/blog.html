@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}BLOG{% endblock %}</h1>
+  <h2>{% block title %}BLOG{% endblock %}</h2>
 {% endblock %}
 
 {% block content %}
+  <div class='section-container'>
     {% for post in posts %}
-    <p>
-        {{ post.title }} says: <b>{{ post.body }}</b>
-    </p>
+        <p>
+            <a href="{{ url_for('blog_page', post_url=post.url) }}" class="small-url"><b>{{ post.title }}</b></a> - {{ post.body }}
+        </p>
     {% endfor %}
+  </div>
 {% endblock %}

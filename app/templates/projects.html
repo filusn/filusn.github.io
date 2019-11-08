@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}PROJECTS{% endblock %}</h1>
+  <h2>{% block title %}PROJECTS{% endblock %}</h2>
 {% endblock %}
 
 {% block content %}
-    {% for project in projects %}
-        <p>
-            <b>{{ project.title }}</b> says: {{ project.body }}
-        </p>
-    {% endfor %}
+    <div class='section-container'>
+        {% for project in projects %}
+            <p>
+                <a href="{{ url_for('project_page', project_url=project.url) }}" class="small-url"><b>{{ project.title }}</b></a> - {{ project.body }}
+            </p>
+        {% endfor %}
+    </div>
 {% endblock %}

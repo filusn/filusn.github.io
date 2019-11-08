@@ -145,3 +145,12 @@ li a:visited {
 p:first-child {
     margin-top: 0;
 }
+
+.small-url {
+    text-decoration: none;
+    color: inherit;
+}
+
+.small-url:hover {
+    text-decoration: underline;
+}
